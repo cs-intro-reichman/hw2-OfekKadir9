@@ -2,5 +2,23 @@
 public  class  TestRandom {
 	public static void main(String[]  args) {
 	    // Replace this comment with your code
+		int count = 0;
+		int numOfLarge = 0;
+		int numOfSmallEqual = 0;
+		int randomator = Integer.parseInt(args[0]);
+		while (count < randomator) {
+			double random = Math.random ();
+			if (random > 0.5) {
+				numOfLarge++;
+			} else {
+				numOfSmallEqual++;
+			}
+			count++;
+		}
+		System.out.println ("> 0.5: " + numOfLarge + " times");
+		System.out.println ("<= 0.5: " + numOfSmallEqual + " times");
+		if (numOfSmallEqual != 0){
+		System.out.println ("Ratio: " + ( (double) numOfLarge / numOfSmallEqual));
+		}
 	}
 }
