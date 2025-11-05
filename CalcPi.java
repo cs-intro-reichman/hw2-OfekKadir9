@@ -7,11 +7,12 @@ public class CalcPi {
 		double terms = 0;
 		int mechane = 3;
 		double one = -1;
-		for (int i = 0; i < numOfTerms; i++) {
+		for (int i = 1; i < numOfTerms; i++) {
 			terms = terms + (one / mechane);
 			one = -one;
 			mechane = mechane + 2;
 		}
+
 		double piDivBy4 = 1 + terms; 
 		double pi = 4 * (piDivBy4);
 		System.out.println ("pi, approximated:     " + pi);
