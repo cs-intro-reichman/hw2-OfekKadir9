@@ -6,7 +6,7 @@ public class Collatz {
 		int colnaum = 1;
 		String kind = args [1];
 		if (kind.equals ("c")) {
-			System.out.println ("Evriy one of the first " + first + " hailstone sequences reached 1.");
+			System.out.println ("Every one of the first " + first + " hailstone sequences reached 1.");
 		} else if (kind.equals ("v")){
 			while (colnaum <= first) {
 				int count = 1;
