@@ -14,7 +14,11 @@ public class Collatz {
 				while (true) {
 					System.out.print (currentnum + " ");
 					if (currentnum == 1) {
-						break;
+						if (count == 1) {
+							currentnum = currentnum * 3 + 1;
+						} else{
+							break;
+						}
 					} else if (currentnum % 2 == 0) {
 						currentnum = currentnum / 2;
 					} else {
